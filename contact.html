@@ -17,6 +17,9 @@
         }
         body {
             background-color: rgb(255, 244, 204);
+            margin: 0;
+            height: 100vh;
+            position: relative;
         }
         .contact-links a {
             text-decoration: none;
@@ -34,24 +37,50 @@
         .other-links a:hover {
             text-decoration: underline;
         }
-    </style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            width: fit-content;
+            padding: 1.5rem 2.5rem;
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 100;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: black;
+        }
+        .back-button a:hover {
+            text-decoration: underline;
+        }
     </style>
 
-    <div class="contact-links">
-        <h1>main</h1>
-        <a href="mailto:reis.ana0812@gmail.com">reis.ana0812@gmail.com</a>
-        -
-        <a href="https://www.linkedin.com/in/ana-sarah-reis/">linkedin</a>
-        -
-        <a href="https://github.com/xsslush">github</a>
+    <div class="container">
+        <div class="contact-links">
+            <h1>contact</h1>
+            <a href="mailto:reis.ana0812@gmail.com">reis.ana0812@gmail.com</a>
+            -
+            <a href="https://www.linkedin.com/in/ana-sarah-reis/" target="_blank">linkedin</a>
+            -
+            <a href="https://github.com/xsslush" target="_blank">github</a>
+        </div>
+        <div class="other-links">
+            <h1>socials</h1>
+            <a href="https://www.instagram.com/xsslush/" target="_blank">instagram</a>
+            -
+            <a href="https://open.spotify.com/user/c82d9kiiarbd2v9xyftgu3wva?si=36035bcf67474169" target="_blank">spotify</a>
+            -
+            <a href="https://www.goodreads.com/" target="_blank">goodreads</a>
+        </div>
     </div>
-    <div class="other-links">
-        <h1>other links</h1>
-        <a href="https://www.instagram.com/xsslush/">instagram</a>
-        -
-        <a href="">spotify</a>
-        -
-        <a href="">goodreads</a>
+    <div class="back-button">
+        <a href="index.html">← back</a>
     </div>
 </body>
 </html>
