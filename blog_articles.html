@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
+    <title>my blog</title>
 </head>
 <body>
 
@@ -22,15 +22,15 @@
             height: 100vh;
             position: relative;
         }
-
-        .temporary {
+        .container {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
             height: 100vh;
-        }
-        .temporary p {
-            font-size: 1.25rem;
+            width: fit-content;
+            padding: 1.5rem 2.5rem;
+            margin-top: -30px;
         }
 
         .back-button {
@@ -46,10 +46,21 @@
         .back-button a:hover {
             text-decoration: underline;
         }
+
+
     </style>
 
-    <div class="temporary">
-        <p><i>coming soon :)</i></p>
+    <div class="container">
+        <div class="posts-container">
+            <h1>thoughts</h1>
+                <div class="img-container">
+                <img src="imgs/mygif2.gif" alt="cool gif" width="400px">
+            </div>
+            <div class="temporary">
+                <p><i>no posts yet</i></p>
+            </div>
+
+        </div>
     </div>
 
     <div class="back-button">
